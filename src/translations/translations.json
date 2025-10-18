@@ -1,0 +1,176 @@
+{
+  "no": {
+    "nav": {
+      "menu": "Meny",
+      "home": "Hjem",
+      "about": "Om oss",
+      "contact": "Kontakt",
+      "callNow": "Ring nå"
+    },
+    "hero": {
+      "welcome": "Velkommen til",
+      "tagline": "Opplev kulinarisk fortreffelighet med våre nøye utarbeidde retter laget av de fineste ingrediensene. Levering direkte til deg!",
+      "viewMenu": "Se meny",
+      "featuredDishes": "Utvalgte retter",
+      "viewFullMenu": "Se hele menyen",
+      "orderNow": "Bestill nå",
+      "deliveryAvailable": "Levering tilgjengelig"
+    },
+    "menu": {
+      "title": "Vår meny",
+      "subtitle": "Oppdag våre signaturetter og sesongspesialiteter, laget med lidenskap og de fineste ingrediensene",
+      "categories": {
+        "all": "Alle",
+        "appetizers": "Forretter",
+        "mains": "Hovedretter", 
+        "desserts": "Desserter",
+        "beverages": "Drikke"
+      },
+      "popular": "Populær",
+      "keyIngredients": "Hovedingredienser",
+      "readyToOrder": "Klar til å bestille?",
+      "callToOrder": "Ring nå for å bestille"
+    },
+    "about": {
+      "title": "Om",
+      "description1": "Grunnlagt i 2015, har Indian Tadka servert eksepsjonell mat som cloudkjøkken. Vår lidenskap for kulinarisk fortreffelighet driver oss til å hente de fineste ingrediensene og skape minneverdige matopplevelser levert direkte til døren din.",
+      "description2": "Som cloudkjøkken fokuserer vi 100% på matkvalitet og leveringsopplevelse. Vårt team av dyktige kokker jobber i vårt dedikerte kjøkken for å sikre at hver rett når deg fersk og deilig.",
+      "ourStory": "Vår historie",
+      "storyDescription": "Startet som en drøm om å dele autentiske smaker, har Indian Tadka vokst til å bli et ledende cloudkjøkken som betjener matentusiaster med premium leveringsopplevelser.",
+      "ourValues": "Våre verdier",
+      "values": {
+        "quality": {
+          "title": "Kvalitet først",
+          "description": "Vi bruker kun de fineste ingrediensene og holder de høyeste standardene i matberedning"
+        },
+        "service": {
+          "title": "Eksepsjonell service",
+          "description": "Rask og pålitelig levering med fokus på kundetilfredshet"
+        },
+        "freshness": {
+          "title": "Ferske ingredienser",
+          "description": "Daglig levering av ferske ingredienser for å sikre optimal smak og ernæring"
+        }
+      }
+    },
+    "contact": {
+      "title": "Bestill i dag",
+      "subtitle": "Klar for en eksepsjonell matopplevelse? Ring oss for å bestille din favorittrett for levering.",
+      "getInTouch": "Ta kontakt",
+      "phone": "Telefon",
+      "email": "E-post",
+      "operatingHours": "Leveringstider",
+      "deliveryHours": "Leveringstider",
+      "readyToDine": "Klar til å bestille?",
+      "callDescription": "Ring oss nå for å legge inn en bestilling for levering. Vårt vennlige personale er klare til å hjelpe deg med å få en fantastisk matopplevelse levert hjem!",
+      "availableDuringHours": "Tilgjengelig i leveringstidene",
+      "avgDeliveryTime": "Gj.snitt leveringstid",
+      "freeDelivery": "Gratis levering over 500kr",
+      "deliveryArea": "Leveringsområde",
+      "orderOnline": "Bestill online eller ring oss"
+    },
+    "footer": {
+      "description": "Indian Tadka leverer eksepsjonell mat direkte til døren din. Opplev autentiske smaker laget med lidenskap og de fineste ingrediensene.",
+      "quickLinks": "Hurtiglenker",
+      "followUs": "Følg oss",
+      "allRightsReserved": "Alle rettigheter forbeholdt",
+      "deliveryInfo": "Leveringsinformasjon",
+      "deliveryTime": "30-45 min",
+      "minOrder": "Minimum bestilling: 200kr",
+      "deliveryFee": "Leveringsgebyr: 49kr (gratis over 500kr)"
+    },
+    "floatingButton": {
+      "callNow": "Ring nå",
+      "minimize": "Minimer",
+      "expand": "Utvid",
+      "call": "Ring"
+    }
+  },
+  "en": {
+    "nav": {
+      "menu": "Menu",
+      "home": "Home",
+      "about": "About",
+      "contact": "Contact",
+      "callNow": "Call Now"
+    },
+    "hero": {
+      "welcome": "Welcome to",
+      "tagline": "Experience culinary excellence with our carefully crafted dishes made from the finest ingredients. Delivered straight to you!",
+      "viewMenu": "View Menu",
+      "featuredDishes": "Featured Dishes",
+      "viewFullMenu": "View Full Menu",
+      "orderNow": "Order Now",
+      "deliveryAvailable": "Delivery Available"
+    },
+    "menu": {
+      "title": "Our Menu",
+      "subtitle": "Discover our signature dishes and seasonal specialties, crafted with passion and the finest ingredients",
+      "categories": {
+        "all": "All",
+        "appetizers": "Appetizers",
+        "mains": "Main Courses",
+        "desserts": "Desserts",
+        "beverages": "Beverages"
+      },
+      "popular": "Popular",
+      "keyIngredients": "Key Ingredients",
+      "readyToOrder": "Ready to order?",
+      "callToOrder": "Call now to order"
+    },
+    "about": {
+      "title": "About",
+      "description1": "Founded in 2015, Indian Tadka has been serving exceptional food as a cloud kitchen. Our passion for culinary excellence drives us to source the finest ingredients and create memorable dining experiences delivered right to your door.",
+      "description2": "As a cloud kitchen, we focus 100% on food quality and delivery experience. Our team of skilled chefs work in our dedicated kitchen to ensure every dish reaches you fresh and delicious.",
+      "ourStory": "Our Story",
+      "storyDescription": "Started as a dream to share authentic flavors, Indian Tadka has grown to become a leading cloud kitchen serving food enthusiasts with premium delivery experiences.",
+      "ourValues": "Our Values",
+      "values": {
+        "quality": {
+          "title": "Quality First",
+          "description": "We use only the finest ingredients and maintain the highest standards in food preparation"
+        },
+        "service": {
+          "title": "Exceptional Service", 
+          "description": "Fast and reliable delivery with a focus on customer satisfaction"
+        },
+        "freshness": {
+          "title": "Fresh Ingredients",
+          "description": "Daily sourcing of fresh ingredients to ensure optimal taste and nutrition"
+        }
+      }
+    },
+    "contact": {
+      "title": "Order Today",
+      "subtitle": "Ready for an exceptional dining experience? Call us to order your favorite dishes for delivery.",
+      "getInTouch": "Get in Touch",
+      "phone": "Phone",
+      "email": "Email",
+      "operatingHours": "Delivery Hours",
+      "deliveryHours": "Delivery Hours",
+      "readyToDine": "Ready to order?",
+      "callDescription": "Call us now to place an order for delivery. Our friendly staff is ready to help you get an amazing dining experience delivered to your door!",
+      "availableDuringHours": "Available during delivery hours",
+      "avgDeliveryTime": "Average delivery time",
+      "freeDelivery": "Free delivery over 500kr",
+      "deliveryArea": "Delivery area",
+      "orderOnline": "Order online or call us"
+    },
+    "footer": {
+      "description": "Indian Tadka delivers exceptional food right to your door. Experience authentic flavors crafted with passion and the finest ingredients.",
+      "quickLinks": "Quick Links",
+      "followUs": "Follow Us",
+      "allRightsReserved": "All rights reserved",
+      "deliveryInfo": "Delivery Information",
+      "deliveryTime": "30-45 min",
+      "minOrder": "Minimum order: 200kr",
+      "deliveryFee": "Delivery fee: 49kr (free over 500kr)"
+    },
+    "floatingButton": {
+      "callNow": "Call Now",
+      "minimize": "Minimize",
+      "expand": "Expand",
+      "call": "Call"
+    }
+  }
+}

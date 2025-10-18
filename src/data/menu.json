@@ -1,0 +1,231 @@
+{
+  "restaurant": {
+    "name": "Indian Tadka",
+    "tagline": "Experience culinary excellence with our carefully crafted dishes made from the finest ingredients",
+    "phone": "+1234567890",
+    "email": "info@indiantadka.com",
+    "cloudKitchen": true,
+    "deliveryOnly": true,
+    "hours": {
+      "monday": "11:00 AM - 10:00 PM",
+      "tuesday": "11:00 AM - 10:00 PM",
+      "wednesday": "11:00 AM - 10:00 PM",
+      "thursday": "11:00 AM - 10:00 PM",
+      "friday": "11:00 AM - 11:00 PM",
+      "saturday": "11:00 AM - 11:00 PM",
+      "sunday": "12:00 PM - 9:00 PM"
+    },
+    "social": {
+      "facebook": "https://facebook.com/deliciousbites",
+      "instagram": "https://instagram.com/deliciousbites",
+      "twitter": "https://twitter.com/deliciousbites",
+      "yelp": "https://yelp.com/deliciousbites"
+    }
+  },
+  "categories": [
+    {
+      "id": "all",
+      "name": "All",
+      "description": "View all menu items"
+    },
+    {
+      "id": "appetizers",
+      "name": "Appetizers",
+      "description": "Start your meal with our delicious appetizers"
+    },
+    {
+      "id": "mains",
+      "name": "Main Courses",
+      "description": "Our signature main dishes"
+    },
+    {
+      "id": "desserts",
+      "name": "Desserts",
+      "description": "Sweet endings to your perfect meal"
+    },
+    {
+      "id": "beverages",
+      "name": "Beverages",
+      "description": "Refreshing drinks and premium selections"
+    }
+  ],
+  "menuItems": [
+    {
+      "id": 1,
+      "name": "Artisan Cheese Board",
+      "description": "Selection of premium aged cheeses with honey, mixed nuts, and artisan crackers",
+      "price": 18.00,
+      "category": "appetizers",
+      "image": "/images/cheese-board.jpg",
+      "dietary": ["vegetarian"],
+      "popular": true,
+      "ingredients": ["aged cheddar", "brie", "goat cheese", "honey", "walnuts", "crackers"]
+    },
+    {
+      "id": 2,
+      "name": "Crispy Calamari",
+      "description": "Fresh squid rings lightly battered and fried, served with marinara sauce and lemon aioli",
+      "price": 14.00,
+      "category": "appetizers",
+      "image": "/images/calamari.jpg",
+      "dietary": [],
+      "popular": false,
+      "ingredients": ["squid", "flour", "marinara sauce", "lemon", "garlic", "herbs"]
+    },
+    {
+      "id": 3,
+      "name": "Truffle Arancini",
+      "description": "Crispy risotto balls filled with truffle and parmesan, served with garlic aioli",
+      "price": 16.00,
+      "category": "appetizers",
+      "image": "/images/arancini.jpg",
+      "dietary": ["vegetarian"],
+      "popular": true,
+      "ingredients": ["arborio rice", "truffle oil", "parmesan", "garlic", "breadcrumbs"]
+    },
+    {
+      "id": 4,
+      "name": "Grilled Ribeye Steak",
+      "description": "12oz prime cut ribeye steak grilled to perfection, served with roasted vegetables and red wine reduction",
+      "price": 32.00,
+      "category": "mains",
+      "image": "/images/ribeye.jpg",
+      "dietary": ["gluten-free"],
+      "popular": true,
+      "ingredients": ["ribeye steak", "seasonal vegetables", "red wine", "herbs", "butter"]
+    },
+    {
+      "id": 5,
+      "name": "Pan-Seared Salmon",
+      "description": "Fresh Atlantic salmon pan-seared and served with quinoa pilaf and lemon butter sauce",
+      "price": 26.00,
+      "category": "mains",
+      "image": "/images/salmon.jpg",
+      "dietary": ["gluten-free", "healthy"],
+      "popular": true,
+      "ingredients": ["atlantic salmon", "quinoa", "lemon", "butter", "capers", "dill"]
+    },
+    {
+      "id": 6,
+      "name": "Wild Mushroom Risotto",
+      "description": "Creamy arborio rice cooked with wild mushrooms, finished with truffle oil and parmesan",
+      "price": 22.00,
+      "category": "mains",
+      "image": "/images/risotto.jpg",
+      "dietary": ["vegetarian", "gluten-free"],
+      "popular": false,
+      "ingredients": ["arborio rice", "porcini mushrooms", "shiitake", "truffle oil", "parmesan"]
+    },
+    {
+      "id": 7,
+      "name": "Herb-Crusted Lamb Rack",
+      "description": "Rack of lamb with herb crust, served with roasted potatoes and mint jus",
+      "price": 34.00,
+      "category": "mains",
+      "image": "/images/lamb.jpg",
+      "dietary": ["gluten-free"],
+      "popular": false,
+      "ingredients": ["lamb rack", "herbs", "potatoes", "mint", "garlic", "rosemary"]
+    },
+    {
+      "id": 8,
+      "name": "Vegetarian Buddha Bowl",
+      "description": "Quinoa bowl with roasted vegetables, avocado, tahini dressing, and mixed greens",
+      "price": 18.00,
+      "category": "mains",
+      "image": "/images/buddha-bowl.jpg",
+      "dietary": ["vegetarian", "vegan", "gluten-free", "healthy"],
+      "popular": true,
+      "ingredients": ["quinoa", "avocado", "roasted vegetables", "tahini", "mixed greens"]
+    },
+    {
+      "id": 9,
+      "name": "Chocolate Lava Cake",
+      "description": "Warm chocolate cake with molten center, served with vanilla ice cream and berry compote",
+      "price": 12.00,
+      "category": "desserts",
+      "image": "/images/lava-cake.jpg",
+      "dietary": ["vegetarian"],
+      "popular": true,
+      "ingredients": ["dark chocolate", "flour", "eggs", "vanilla ice cream", "mixed berries"]
+    },
+    {
+      "id": 10,
+      "name": "Classic Tiramisu",
+      "description": "Traditional Italian dessert with coffee-soaked ladyfingers, mascarpone, and cocoa",
+      "price": 10.00,
+      "category": "desserts",
+      "image": "/images/tiramisu.jpg",
+      "dietary": ["vegetarian"],
+      "popular": true,
+      "ingredients": ["ladyfingers", "espresso", "mascarpone", "eggs", "cocoa powder"]
+    },
+    {
+      "id": 11,
+      "name": "Lemon Panna Cotta",
+      "description": "Silky smooth panna cotta infused with lemon, topped with fresh berries",
+      "price": 9.00,
+      "category": "desserts",
+      "image": "/images/panna-cotta.jpg",
+      "dietary": ["vegetarian", "gluten-free"],
+      "popular": false,
+      "ingredients": ["cream", "lemon", "gelatin", "sugar", "fresh berries"]
+    },
+    {
+      "id": 12,
+      "name": "Seasonal Fruit Tart",
+      "description": "Buttery pastry shell filled with vanilla custard and topped with seasonal fruits",
+      "price": 11.00,
+      "category": "desserts",
+      "image": "/images/fruit-tart.jpg",
+      "dietary": ["vegetarian"],
+      "popular": false,
+      "ingredients": ["pastry", "vanilla custard", "seasonal fruits", "apricot glaze"]
+    },
+    {
+      "id": 13,
+      "name": "House Wine Selection",
+      "description": "Curated selection of red, white, and rosé wines from our cellar",
+      "price": 12.00,
+      "category": "beverages",
+      "image": "/images/wine.jpg",
+      "dietary": ["vegan"],
+      "popular": true,
+      "ingredients": ["grapes"],
+      "note": "Ask your server for today's selection"
+    },
+    {
+      "id": 14,
+      "name": "Artisan Coffee",
+      "description": "Freshly roasted single-origin beans, expertly prepared by our baristas",
+      "price": 4.00,
+      "category": "beverages",
+      "image": "/images/coffee.jpg",
+      "dietary": ["vegan"],
+      "popular": true,
+      "ingredients": ["arabica coffee beans"]
+    },
+    {
+      "id": 15,
+      "name": "Fresh Juice Blend",
+      "description": "Daily selection of fresh-pressed fruit and vegetable juices",
+      "price": 6.00,
+      "category": "beverages",
+      "image": "/images/juice.jpg",
+      "dietary": ["vegan", "healthy"],
+      "popular": false,
+      "ingredients": ["seasonal fruits", "vegetables"]
+    },
+    {
+      "id": 16,
+      "name": "Craft Beer Selection",
+      "description": "Rotating selection of local craft beers on tap and in bottles",
+      "price": 7.00,
+      "category": "beverages",
+      "image": "/images/beer.jpg",
+      "dietary": [],
+      "popular": true,
+      "ingredients": ["hops", "malt", "yeast"]
+    }
+  ]
+}
