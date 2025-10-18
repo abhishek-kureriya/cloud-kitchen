@@ -71,9 +71,21 @@ const About = ({ restaurant }) => {
           {/* Image/Visual */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="w-80 h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-burgundy-100 via-burgundy-200 to-burgundy-300 rounded-2xl flex items-center justify-center shadow-xl">
-                <div className="text-8xl animate-float">
-                  🏪
+              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden shadow-xl">
+                <img 
+                  src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=400&h=400&fit=crop&auto=format"
+                  alt="Indian spices and cooking"
+                  className="w-full h-full object-cover animate-float"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.nextSibling.style.display = 'flex';
+                  }}
+                />
+                {/* Fallback */}
+                <div className="w-full h-full bg-gradient-to-br from-burgundy-100 via-burgundy-200 to-burgundy-300 flex items-center justify-center hidden">
+                  <div className="text-8xl animate-float">
+                    �
+                  </div>
                 </div>
               </div>
               

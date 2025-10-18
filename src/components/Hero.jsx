@@ -19,9 +19,24 @@ const Hero = ({ restaurant }) => {
   }
 
   const featuredItems = [
-    { name: "Butter Chicken", price: "299kr", emoji: "🍛" },
-    { name: "Biryani", price: "259kr", emoji: "🍚" },
-    { name: "Naan Bread", price: "49kr", emoji: "🫓" }
+    { 
+      name: "Butter Chicken", 
+      price: "299kr", 
+      emoji: "🍛",
+      image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=300&h=300&fit=crop&auto=format"
+    },
+    { 
+      name: "Biryani", 
+      price: "259kr", 
+      emoji: "🍚",
+      image: "https://images.unsplash.com/photo-1563379091339-03246963d7d3?w=300&h=300&fit=crop&auto=format"
+    },
+    { 
+      name: "Naan Bread", 
+      price: "49kr", 
+      emoji: "🫓",
+      image: "https://images.unsplash.com/photo-1628294895950-9805252327bc?w=300&h=300&fit=crop&auto=format"
+    }
   ]
 
   return (
@@ -93,9 +108,22 @@ const Hero = ({ restaurant }) => {
               {featuredItems.map((item, index) => (
                 <div 
                   key={index}
-                  className="bg-white rounded-xl shadow-lg p-4 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center"
+                  className="bg-white rounded-xl shadow-lg p-4 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center overflow-hidden"
                 >
-                  <div className="text-3xl mb-2">{item.emoji}</div>
+                  <div className="w-16 h-16 mx-auto mb-3 rounded-lg overflow-hidden">
+                    <img 
+                      src={item.image}
+                      alt={item.name}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                        e.target.nextSibling.style.display = 'flex';
+                      }}
+                    />
+                    <div className="w-full h-full bg-gray-100 flex items-center justify-center text-2xl hidden">
+                      {item.emoji}
+                    </div>
+                  </div>
                   <h4 className="text-base font-semibold text-gray-900 mb-1">{item.name}</h4>
                   <p className="text-burgundy-600 font-bold text-lg">{item.price}</p>
                 </div>
@@ -132,9 +160,22 @@ const Hero = ({ restaurant }) => {
             {featuredItems.map((item, index) => (
               <div 
                 key={index}
-                className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+                className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden"
               >
-                <div className="text-4xl mb-3">{item.emoji}</div>
+                <div className="w-20 h-20 mx-auto mb-4 rounded-lg overflow-hidden">
+                  <img 
+                    src={item.image}
+                    alt={item.name}
+                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'flex';
+                    }}
+                  />
+                  <div className="w-full h-full bg-gray-100 flex items-center justify-center text-4xl hidden">
+                    {item.emoji}
+                  </div>
+                </div>
                 <h4 className="text-lg font-semibold text-gray-900 mb-2">{item.name}</h4>
                 <p className="text-burgundy-600 font-bold text-xl">{item.price}</p>
               </div>
