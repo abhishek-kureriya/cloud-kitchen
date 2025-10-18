@@ -428,4 +428,4 @@ For support, email support@deliciousbites.com or create an issue in the reposito
 
 ---
 
-**Made with ❤️ for restaurants everywhere**
+**Made with ❤️ for restaurants everywhere**# Test change for git authentication
