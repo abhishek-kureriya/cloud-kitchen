@@ -104,18 +104,21 @@ const Header = ({ restaurant }) => {
             </a>
           </nav>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={toggleMenu}
-            className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200"
-            aria-label="Toggle menu"
-          >
-            {isMenuOpen ? (
-              <X className="w-6 h-6 text-gray-700" />
-            ) : (
-              <Menu className="w-6 h-6 text-gray-700" />
-            )}
-          </button>
+          {/* Mobile: Language Switcher + Menu Button */}
+          <div className="lg:hidden flex items-center space-x-2">
+            <LanguageSwitcher />
+            <button
+              onClick={toggleMenu}
+              className="p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200"
+              aria-label="Toggle menu"
+            >
+              {isMenuOpen ? (
+                <X className="w-6 h-6 text-gray-700" />
+              ) : (
+                <Menu className="w-6 h-6 text-gray-700" />
+              )}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
@@ -151,9 +154,6 @@ const Header = ({ restaurant }) => {
             >
               {t('nav.contact')}
             </button>
-            <div className="py-2">
-              <LanguageSwitcher />
-            </div>
             <a
               href={`tel:${restaurant.phone}`}
               className="btn-call w-full justify-center mt-4"

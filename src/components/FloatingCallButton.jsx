@@ -2,24 +2,21 @@ import React, { useState, useEffect } from 'react'
 import { Phone, X } from 'lucide-react'
 
 const FloatingCallButton = ({ phone }) => {
-  const [isVisible, setIsVisible] = useState(false)
+  const [isDesktop, setIsDesktop] = useState(false)
   const [isMinimized, setIsMinimized] = useState(false)
 
   useEffect(() => {
-    const handleScroll = () => {
-      // Always show on mobile, show on desktop after scrolling 100px
-      const isMobile = window.innerWidth < 1024
-      setIsVisible(isMobile || window.scrollY > 100)
+    const handleResize = () => {
+      // Check if desktop for different styling
+      setIsDesktop(window.innerWidth >= 1024)
     }
 
     // Initial check
-    handleScroll()
+    handleResize()
     
-    window.addEventListener('scroll', handleScroll)
-    window.addEventListener('resize', handleScroll)
+    window.addEventListener('resize', handleResize)
     return () => {
-      window.removeEventListener('scroll', handleScroll)
-      window.removeEventListener('resize', handleScroll)
+      window.removeEventListener('resize', handleResize)
     }
   }, [])
 
@@ -40,67 +37,58 @@ const FloatingCallButton = ({ phone }) => {
     setIsMinimized(!isMinimized)
   }
 
-  if (!isVisible) return null
-
+  // Always show the button now
   return (
     <>
-      {/* Floating Call Button */}
-      <div className={`fixed bottom-4 right-4 lg:bottom-6 lg:right-6 z-50 transition-all duration-300 ${
+      {/* Floating Call Button - Always visible on all devices */}
+      <div className={`fixed bottom-6 right-4 lg:bottom-6 lg:right-6 z-50 transition-all duration-300 mobile-attention ${
         isMinimized ? 'transform scale-90' : ''
       }`}>
         {!isMinimized ? (
           /* Expanded Button */
-          <div className="bg-accent-600 hover:bg-accent-700 text-white rounded-2xl shadow-2xl overflow-hidden">
+          <div className="bg-accent-600 hover:bg-accent-700 text-white rounded-2xl lg:rounded-2xl shadow-2xl overflow-hidden ring-4 ring-accent-200 lg:ring-2">
             <div className="flex items-center">
               <button
                 onClick={handleCall}
-                className="flex items-center space-x-3 px-4 py-3 lg:px-6 lg:py-4 hover:bg-accent-700 transition-colors duration-200"
+                className="flex items-center space-x-3 px-5 py-4 lg:px-6 lg:py-4 hover:bg-accent-700 transition-colors duration-200"
               >
                 <div className="relative">
-                  <Phone className="w-5 h-5 lg:w-6 lg:h-6 animate-bounce" />
-                  <div className="absolute -top-1 -right-1 w-2 h-2 lg:w-3 lg:h-3 bg-red-500 rounded-full animate-ping"></div>
+                  <Phone className="w-6 h-6 lg:w-6 lg:h-6 animate-bounce" />
+                  <div className="absolute -top-1 -right-1 w-3 h-3 lg:w-3 lg:h-3 bg-red-500 rounded-full animate-ping"></div>
                 </div>
                 <div className="block">
-                  <div className="text-sm lg:text-base font-semibold">Ring nå</div>
-                  <div className="text-xs opacity-90 hidden sm:block">{formatPhoneForDisplay(phone)}</div>
+                  <div className="text-base lg:text-base font-semibold">Ring nå</div>
+                  <div className="text-xs opacity-90 block">{formatPhoneForDisplay(phone)}</div>
                 </div>
               </button>
               
-              <button
-                onClick={toggleMinimize}
-                className="p-2 lg:p-3 hover:bg-accent-700 border-l border-accent-500 transition-colors duration-200 hidden lg:block"
-                aria-label="Minimize"
-              >
-                <X className="w-4 h-4" />
-              </button>
+              {/* Only show minimize button on desktop */}
+              {isDesktop && (
+                <button
+                  onClick={toggleMinimize}
+                  className="p-3 hover:bg-accent-700 border-l border-accent-500 transition-colors duration-200"
+                  aria-label="Minimize"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              )}
             </div>
           </div>
         ) : (
-          /* Minimized Button */
-          <button
-            onClick={toggleMinimize}
-            className="w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-2xl flex items-center justify-center animate-pulse-slow transition-all duration-200 hover:scale-110"
-            aria-label="Expand call button"
-          >
-            <div className="relative">
-              <Phone className="w-6 h-6" />
-              <div className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full animate-ping"></div>
-            </div>
-          </button>
+          /* Minimized Button - Desktop only */
+          isDesktop && (
+            <button
+              onClick={toggleMinimize}
+              className="w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-2xl flex items-center justify-center animate-pulse-slow transition-all duration-200 hover:scale-110"
+              aria-label="Expand call button"
+            >
+              <div className="relative">
+                <Phone className="w-6 h-6" />
+                <div className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full animate-ping"></div>
+              </div>
+            </button>
+          )
         )}
-      </div>
-
-      {/* Mobile-only sticky bottom call bar */}
-      <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden">
-        <div className="bg-green-500 text-white p-4 shadow-2xl">
-          <button
-            onClick={handleCall}
-            className="w-full flex items-center justify-center space-x-3 py-2 font-semibold text-lg"
-          >
-            <Phone className="w-6 h-6" />
-            <span>Call {formatPhoneForDisplay(phone)}</span>
-          </button>
-        </div>
       </div>
 
       {/* Pulse animation for attraction */}
@@ -116,6 +104,15 @@ const FloatingCallButton = ({ phone }) => {
           }
         }
         
+        @keyframes mobile-attention {
+          0%, 100% { 
+            transform: scale(1); 
+          }
+          50% { 
+            transform: scale(1.05); 
+          }
+        }
+        
         .pulse-ring::before {
           content: '';
           position: absolute;
@@ -127,6 +124,12 @@ const FloatingCallButton = ({ phone }) => {
           border-radius: 50%;
           transform: translate(-50%, -50%);
           animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        @media (max-width: 1023px) {
+          .mobile-attention {
+            animation: mobile-attention 3s ease-in-out infinite;
+          }
         }
       `}</style>
     </>
