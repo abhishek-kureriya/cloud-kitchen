@@ -77,7 +77,7 @@ const Hero = ({ restaurant }) => {
               {/* Main logo container - removed circular background to let logo shine */}
               <div className="w-80 h-80 md:w-96 md:h-96 flex items-center justify-center animate-float">
                 <img 
-                  src="/assets/logo.png" 
+                  src="/cloud-kitchen/assets/logo.png" 
                   alt="Indian Tadka - Ekte Indisk Mat"
                   className="w-full h-full object-contain drop-shadow-2xl rounded-2xl hover:scale-105 transition-transform duration-500"
                   onError={(e) => {
@@ -151,8 +151,8 @@ const Hero = ({ restaurant }) => {
           </button>
         </div>
 
-        {/* Featured Menu Items Preview */}
-        <div className="mt-20 text-center">
+        {/* Featured Menu Items Preview - Desktop only */}
+        <div className="mt-20 text-center hidden lg:block">
           <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
             {t('hero.featuredDishes')} <span className="text-gradient"></span>
           </h3>

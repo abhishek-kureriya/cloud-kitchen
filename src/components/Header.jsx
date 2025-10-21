@@ -54,7 +54,7 @@ const Header = ({ restaurant }) => {
           <div className="flex-shrink-0">
             <div className="flex items-center space-x-3">
               <img 
-                src="/assets/logo.png" 
+                src="/cloud-kitchen/assets/logo.png" 
                 alt={restaurant.name}
                 className="h-12 w-12 lg:h-14 lg:w-14 object-contain"
                 onError={(e) => {
@@ -154,14 +154,6 @@ const Header = ({ restaurant }) => {
             >
               {t('nav.contact')}
             </button>
-            <a
-              href={`tel:${restaurant.phone}`}
-              className="btn-call w-full justify-center mt-4"
-              onClick={closeMenu}
-            >
-              <Phone className="w-4 h-4 mr-2" />
-              {t('nav.callNow')}
-            </a>
           </nav>
         </div>
       </div>
