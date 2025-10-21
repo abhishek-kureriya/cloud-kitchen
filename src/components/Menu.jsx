@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useRef } from 'react'
-import { Star, Leaf, Heart, Utensils, Coffee, Cookie, Wine } from 'lucide-react'
+import { Star, Leaf, Heart, Utensils, Coffee, Cookie, Wine, Wheat } from 'lucide-react'
 import { useLanguage } from '../contexts/LanguageContext'
 
 const Menu = ({ categories, menuItems }) => {
@@ -12,6 +12,7 @@ const Menu = ({ categories, menuItems }) => {
     all: Utensils,
     appetizers: Leaf,
     mains: Heart,
+    breads: Wheat,
     desserts: Cookie,
     beverages: Coffee
   }
@@ -19,6 +20,10 @@ const Menu = ({ categories, menuItems }) => {
   // Count items per category
   const getCategoryCount = (categoryId) => {
     if (categoryId === 'all') return menuItems.length
+    if (categoryId === 'mains') {
+      // Include both mains and breads in the mains count
+      return menuItems.filter(item => item.category === 'mains' || item.category === 'breads').length
+    }
     return menuItems.filter(item => item.category === categoryId).length
   }
 
@@ -48,6 +53,10 @@ const Menu = ({ categories, menuItems }) => {
   const filteredItems = useMemo(() => {
     if (activeCategory === 'all') {
       return menuItems
+    }
+    if (activeCategory === 'mains') {
+      // Show both main courses and breads when mains is selected
+      return menuItems.filter(item => item.category === 'mains' || item.category === 'breads')
     }
     return menuItems.filter(item => item.category === activeCategory)
   }, [activeCategory, menuItems])
@@ -84,7 +93,7 @@ const Menu = ({ categories, menuItems }) => {
                   }`}
                 >
                   <IconComponent className="w-5 h-5" />
-                  <span>{t(`menu.categories.${category.id}`)}</span>
+                  <span>{category.name}</span>
                   <span className={`text-xs px-2 py-1 rounded-full ${
                     activeCategory === category.id
                       ? 'bg-burgundy-500'
@@ -118,7 +127,7 @@ const Menu = ({ categories, menuItems }) => {
                     }`}
                   >
                     <IconComponent className="w-4 h-4" />
-                    <span className="text-sm">{t(`menu.categories.${category.id}`)}</span>
+                    <span className="text-sm">{category.name}</span>
                     <span className={`text-xs px-2 py-0.5 rounded-full ${
                       activeCategory === category.id
                         ? 'bg-burgundy-500'

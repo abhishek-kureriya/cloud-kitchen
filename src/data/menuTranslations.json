@@ -13,6 +13,10 @@
         "name": "Main Courses",
         "description": "Our signature main dishes"
       },
+      "breads": {
+        "name": "Indian Breads",
+        "description": "Freshly baked traditional Indian breads"
+      },
       "desserts": {
         "name": "Desserts",
         "description": "Sweet endings to your perfect meal"
@@ -78,6 +82,26 @@
     "shahiPaneer": {
         "name": "Shahi Paneer",
         "description": "Cottage cheese cubes cooked in a rich and creamy cashew-based gravy"
+    },
+    "pyazParatha": {
+        "name": "Pyaz Paratha",
+        "description": "Layered flatbread stuffed with spiced onions"
+    },
+    "paneerParatha": {
+        "name": "Paneer Paratha",
+        "description": "Layered flatbread stuffed with spiced paneer"
+    },
+    "plainParatha": {
+        "name": "Plain Paratha",
+        "description": "Simple layered whole wheat paratha brushed with ghee or butter."
+    },
+    "gobiParatha": {
+        "name": "Gobi Paratha",
+        "description": "Layered flatbread stuffed with spiced cauliflower"
+    },
+    "alooParatha": {
+        "name": "Aloo Paratha",
+        "description": "Layered flatbread stuffed with spiced potato"  
     }
 }
   },
@@ -95,6 +119,10 @@
         "name": "Hovedretter",
         "description": "Våre signatur hovedretter"
       },
+      "breads": {
+        "name": "Indisk Brød",
+        "description": "Fersk bakt tradisjonelt indisk brød"
+      },
       "desserts": {
         "name": "Desserter",
         "description": "Søte avslutninger på ditt perfekte måltid"
@@ -105,7 +133,7 @@
       }
     },
     "menuItems": {
-      "iryani": {
+      "biryani": {
         "name": "Biryani",
         "description": "Duftende basmatiris lagdelt med krydret kylling, safran og karamelliserte løk"
       },
@@ -166,7 +194,28 @@
     "shahiPaneer": {
         "name": "Shahi Paneer",
         "description": "Cottage cheese-terninger kokt i en rik og kremet cashew-basert saus"
-    }
-}   
+    },
+    "pyazParatha": {
+        "name": "Pyaz Paratha",
+        "description": "Lagdelt flatbrød fylt med krydret løk"
+    },
+    "paneerParatha": {
+        "name": "Paneer Paratha",
+        "description": "Lagdelt flatbrød fylt med krydret paneer"
+    },
+    "plainParatha": {
+        "name": "Plain Paratha",
+        "description": "Enkelt lagdelt fullkornsbrød smurt med ghee eller smør"
+    },
+    "gobhiParatha": {
+        "name": "Gobhi Paratha",
+        "description": "Lagdelt flatbrød fylt med krydret blomkål"
+    },
+    "alooParatha": {
+        "name": "Aloo Paratha",
+        "description": "Lagdelt flatbrød fylt med krydret potet"
+    }  
+} 
+
   }
 }

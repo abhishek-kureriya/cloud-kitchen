@@ -35,12 +35,16 @@
       "sortOrder": 2
     },
     {
-      "id": "desserts",
+      "id": "breads",
       "sortOrder": 3
     },
     {
-      "id": "beverages",
+      "id": "desserts",
       "sortOrder": 4
+    },
+    {
+      "id": "beverages",
+      "sortOrder": 5
     }
   ],
   "menuItems": [
@@ -183,6 +187,59 @@
       "dietary": ["vegetarian"],
       "emoji": "🍯",
       "keyIngredients": ["white chickpeas", "onions", "tomatoes", "spices"]
+    },
+    {
+      "id": 14,
+      "nameKey": "alooParatha",
+      "price": "89",
+      "category": "breads",
+      "image": "https://images.unsplash.com/photo-1628294895950-9805252327bc?w=400&h=300&fit=crop&auto=format",
+      "dietary": ["vegetarian"],
+      "popular": true,
+      "emoji": "🫓",
+      "keyIngredients": ["flour", "mashed potatoes", "spices"]
+    },
+    {
+      "id": 15,
+      "nameKey": "gobhiParatha",
+      "price": "89kr",
+      "category": "breads",
+      "image": "https://images.unsplash.com/photo-1628294895950-9805252327bc?w=400&h=300&fit=crop&auto=format",
+      "dietary": ["vegetarian"],
+      "popular": true,
+      "emoji": "🧄",
+      "keyIngredients": ["flour", "grated cauliflower", "spices"]
+    },
+    {
+      "id": 16,
+      "nameKey": "plainParatha",
+      "price": "25kr",
+      "category": "breads",
+      "image": "https://images.unsplash.com/photo-1628294895950-9805252327bc?w=400&h=300&fit=crop&auto=format",
+      "dietary": ["vegetarian"],
+      "emoji": "🫓",
+      "keyIngredients": ["whole wheat flour", "water", "salt"]
+    },
+    {
+      "id": 17,
+      "nameKey": "paneerParatha",
+      "price": "99kr",
+      "category": "breads",
+      "image": "https://images.unsplash.com/photo-1628294895950-9805252327bc?w=400&h=300&fit=crop&auto=format",
+      "dietary": ["vegetarian"],
+      "emoji": "🥞",
+      "keyIngredients": ["flour", "paneer", "spices"]
+    },
+    {
+      "id": 18,
+      "nameKey": "pyazParatha",
+      "price": "89kr",
+      "category": "breads",
+      "image": "https://images.unsplash.com/photo-1628294895950-9805252327bc?w=400&h=300&fit=crop&auto=format",
+      "dietary": ["vegetarian"],
+      "emoji": "🍞",
+      "keyIngredients": ["flour", "onions", "spices"]
     }
+
   ]
 }
