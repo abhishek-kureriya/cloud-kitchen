@@ -44,35 +44,36 @@
     }
   ],
   "menuItems": [
-    {
+     {
       "id": 1,
-      "nameKey": "butterChicken",
-      "price": "299kr",
+      "nameKey": "matarPaneer",
+      "price": "159kr",
       "category": "mains",
-      "image": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?w=400&h=300&fit=crop&auto=format",
-      "dietary": ["gluten-free"],
+      "image": "https://images.unsplash.com/photo-1563379091339-03246963d8d9?w=400&h=300&fit=crop&auto=format",
+      "dietary": ["vegetarian"],
       "popular": true,
-      "emoji": "🍛",
-      "keyIngredients": ["chicken", "tomato", "cream", "garam masala", "fenugreek"]
+      "emoji": "🍚",
+      "keyIngredients": ["paneer", "peas", "tomatoes", "onions", "spices"]
     },
+   
     {
       "id": 2,
-      "nameKey": "chickenBiryani",
+      "nameKey": "biryani",
       "price": "279kr",
       "category": "mains",
       "image": "https://images.unsplash.com/photo-1563379091339-03246963d8d9?w=400&h=300&fit=crop&auto=format",
-      "dietary": ["gluten-free"],
+      "dietary": ["vegetarian"],
       "popular": true,
       "emoji": "🍚",
-      "keyIngredients": ["basmati rice", "chicken", "saffron", "onions", "mint"]
+      "keyIngredients": ["basmati rice", "saffron", "onions", "mint"]
     },
     {
       "id": 3,
       "nameKey": "palakPaneer",
-      "price": "249kr",
+      "price": "189kr",
       "category": "mains",
       "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=300&fit=crop&auto=format",
-      "dietary": ["vegetarian", "gluten-free"],
+      "dietary": ["vegetarian"],
       "popular": true,
       "emoji": "🥬",
       "keyIngredients": ["paneer", "spinach", "onions", "tomatoes", "cream"]
@@ -80,46 +81,58 @@
     {
       "id": 4,
       "nameKey": "dalMakhani",
-      "price": "229kr",
+      "price": "159kr",
       "category": "mains",
       "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=300&fit=crop&auto=format",
-      "dietary": ["vegetarian", "gluten-free"],
+      "dietary": ["vegetarian"],
       "emoji": "🍲",
       "keyIngredients": ["black lentils", "kidney beans", "cream", "butter", "tomatoes"]
     },
     {
       "id": 5,
-      "nameKey": "tandooriChicken",
-      "price": "319kr",
+      "nameKey": "shahiPaneer",
+      "price": "169kr",
       "category": "mains",
       "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&h=300&fit=crop&auto=format",
-      "dietary": ["gluten-free"],
+      "dietary": ["vegetarian"],
       "emoji": "🔥",
-      "keyIngredients": ["chicken", "yogurt", "tandoori masala", "ginger", "garlic"]
+      "keyIngredients": ["paneer", "cashews", "cream", "tomatoes", "spices"]
     },
     {
       "id": 6,
       "nameKey": "samosa",
-      "price": "89kr",
+      "price": "59kr",
       "category": "appetizers",
       "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=300&fit=crop&auto=format",
       "dietary": ["vegetarian"],
       "popular": true,
       "emoji": "🥟",
-      "keyIngredients": ["potatoes", "peas", "spices", "pastry", "coriander"]
+      "keyIngredients": ["potatoes", "peas"]
     },
     {
       "id": 7,
-      "nameKey": "chickenTikka",
-      "price": "199kr",
+      "nameKey": "pakora",
+      "price": "65",
       "category": "appetizers",
-      "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop&auto=format",
-      "dietary": ["gluten-free"],
-      "emoji": "🍢",
-      "keyIngredients": ["chicken", "yogurt", "tikka masala", "bell peppers", "onions"]
+      "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=300&fit=crop&auto=format",
+      "dietary": ["vegetarian"],
+      "popular": true,
+      "emoji": "🥟",
+      "keyIngredients": ["vegetable", "chickpea flour", "spices"]
+    },
+      {
+      "id": 8,
+      "nameKey": "aloo Chaat",
+      "price": "65Kr",
+      "category": "appetizers",
+      "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=300&fit=crop&auto=format",
+      "dietary": ["vegetarian"],
+      "popular": true,
+      "emoji": "🥟",
+      "keyIngredients": ["potato","chutney"]
     },
     {
-      "id": 8,
+      "id": 9,
       "nameKey": "paneerTikka",
       "price": "179kr",
       "category": "appetizers",
@@ -129,7 +142,7 @@
       "keyIngredients": ["paneer", "bell peppers", "onions", "tikka masala", "mint"]
     },
     {
-      "id": 9,
+      "id": 10,
       "nameKey": "gulabJamun",
       "price": "89kr",
       "category": "desserts",
@@ -139,16 +152,7 @@
       "emoji": "🍯",
       "keyIngredients": ["milk solids", "sugar syrup", "cardamom", "rose water"]
     },
-    {
-      "id": 10,
-      "nameKey": "rasmalai",
-      "price": "99kr",
-      "category": "desserts",
-      "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop&auto=format",
-      "dietary": ["vegetarian"],
-      "emoji": "🥛",
-      "keyIngredients": ["cottage cheese", "milk", "sugar", "cardamom", "pistachios"]
-    },
+   
     {
       "id": 11,
       "nameKey": "mangoLassi",
@@ -166,9 +170,19 @@
       "price": "49kr",
       "category": "beverages",
       "image": "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=400&h=300&fit=crop&auto=format",
-      "dietary": ["vegetarian", "gluten-free"],
+      "dietary": ["vegetarian"],
       "emoji": "🍵",
       "keyIngredients": ["black tea", "milk", "cardamom", "ginger", "cinnamon"]
+    },
+     {
+      "id": 13,
+      "nameKey": "shafedChane",
+      "price": "49kr",
+      "category": "mains",
+      "image": "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=400&h=300&fit=crop&auto=format",
+      "dietary": ["vegetarian"],
+      "emoji": "🍯",
+      "keyIngredients": ["white chickpeas", "onions", "tomatoes", "spices"]
     }
   ]
 }

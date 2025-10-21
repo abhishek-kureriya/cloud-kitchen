@@ -23,13 +23,9 @@
       }
     },
     "menuItems": {
-      "butterChicken": {
-        "name": "Butter Chicken",
-        "description": "Tender chicken pieces in a rich, creamy tomato-based sauce with aromatic spices"
-      },
-      "chickenBiryani": {
-        "name": "Chicken Biryani",
-        "description": "Fragrant basmati rice layered with spiced chicken, saffron, and caramelized onions"
+        "biryani": {
+        "name": "Biryani",
+        "description": "Vegetable biryani with fragrant basmati rice layered with saffron and caramelized onions"
       },
       "palakPaneer": {
         "name": "Palak Paneer",
@@ -39,17 +35,9 @@
         "name": "Dal Makhani",
         "description": "Slow-cooked black lentils and kidney beans in a rich, creamy tomato sauce"
       },
-      "tandooriChicken": {
-        "name": "Tandoori Chicken",
-        "description": "Clay oven-roasted chicken marinated in yogurt and traditional spices"
-      },
       "samosa": {
-        "name": "Vegetable Samosa",
-        "description": "Crispy pastry triangles filled with spiced potatoes and green peas"
-      },
-      "chickenTikka": {
-        "name": "Chicken Tikka",
-        "description": "Succulent chicken pieces marinated in spices and grilled to perfection"
+        "name": "Samosa",
+        "description": "Crispy pastry filled with spiced potatoes and peas. "
       },
       "paneerTikka": {
         "name": "Paneer Tikka",
@@ -59,10 +47,6 @@
         "name": "Gulab Jamun",
         "description": "Soft milk dumplings soaked in aromatic sugar syrup with cardamom"
       },
-      "rasmalai": {
-        "name": "Rasmalai",
-        "description": "Delicate cottage cheese patties in sweetened, cardamom-flavored milk"
-      },
       "mangoLassi": {
         "name": "Mango Lassi",
         "description": "Refreshing yogurt drink blended with sweet mango and aromatic spices"
@@ -70,8 +54,32 @@
       "chaiTea": {
         "name": "Masala Chai",
         "description": "Traditional spiced tea with cardamom, ginger, and warm spices"
-      }
+      },
+      "alooChaat": {
+        "name": "Aloo Chaat",
+        "description": "Mixed vegetable fritters deep-fried in gram flour batter."
+      },
+      "pakora": {
+        "name": "Pakora",
+        "description": "Crispy vegetable fritters made with chickpea flour and spices"
+      },
+      "matarPaneer": {
+        "name": "Matar Paneer",
+        "description": "Cottage cheese and green peas cooked in a spiced tomato gravy"
+      },
+      "shafedChane": {
+        "name": "Safed Chane (White Chickpeas Curry)",
+        "description": "White chickpeas cooked in a flavorful tomato-based curry"
+    },
+    "alloChaat": {
+        "name": "Aloo Chaat",
+        "description": "Mixed vegetable fritters deep-fried in gram flour batter."
+    },
+    "shahiPaneer": {
+        "name": "Shahi Paneer",
+        "description": "Cottage cheese cubes cooked in a rich and creamy cashew-based gravy"
     }
+}
   },
   "no": {
     "categories": {
@@ -97,12 +105,8 @@
       }
     },
     "menuItems": {
-      "butterChicken": {
-        "name": "Butter Chicken",
-        "description": "Møre kyllingstykker i en rik, kremete tomatbasert saus med aromatiske krydder"
-      },
-      "chickenBiryani": {
-        "name": "Kylling Biryani",
+      "iryani": {
+        "name": "Biryani",
         "description": "Duftende basmatiris lagdelt med krydret kylling, safran og karamelliserte løk"
       },
       "palakPaneer": {
@@ -113,18 +117,12 @@
         "name": "Dal Makhani",
         "description": "Sakte kokte svarte linser og kidneybønner i en rik, kremete tomatsaus"
       },
-      "tandooriChicken": {
-        "name": "Tandoori Kylling",
-        "description": "Leirovn-stekt kylling marinert i yoghurt og tradisjonelle krydder"
-      },
+    
       "samosa": {
         "name": "Grønnsak Samosa",
         "description": "Sprø pasteideigstrekanter fylt med krydrede poteter og grønne erter"
       },
-      "chickenTikka": {
-        "name": "Kylling Tikka",
-        "description": "Saftige kyllingstykker marinert i krydder og grillet til perfeksjon"
-      },
+
       "paneerTikka": {
         "name": "Paneer Tikka",
         "description": "Grillet cottage cheese-terninger med paprika og løk i tikka-marinade"
@@ -144,7 +142,31 @@
       "chaiTea": {
         "name": "Masala Chai",
         "description": "Tradisjonell krydret te med kardemomme, ingefær og varme krydder"
-      }
+      },
+        "alooChaat": {
+            "name": "Aloo Chaat",
+            "description": "Fritert blandede grønnsaker i kikertmelrøre."
+        },
+        "pakora": {
+            "name": "Pakora",
+            "description": "Sprø grønnsaksfrittere laget med kikertmel og krydder"
+        },
+        "matarPaneer": {
+            "name": "Matar Paneer",
+            "description": "Cottage cheese og grønne erter kokt i en krydret tomatgryte"
+        },
+        "shafedChane": {
+            "name": "Safed Chane (Hvit Kikerter Curry)",
+            "description": "Hvite kikerter kokt i en smakfull tomatbasert curry"
+        },
+        "alloChaat": {
+        "name": "Aloo Chaat",
+        "description": "Fritert blandede grønnsaker i kikertmelrøre."
+    },
+    "shahiPaneer": {
+        "name": "Shahi Paneer",
+        "description": "Cottage cheese-terninger kokt i en rik og kremet cashew-basert saus"
     }
+}   
   }
 }
