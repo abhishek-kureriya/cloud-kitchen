@@ -1,0 +1,150 @@
+{
+  "en": {
+    "categories": {
+      "all": {
+        "name": "All",
+        "description": "View all menu items"
+      },
+      "appetizers": {
+        "name": "Appetizers",
+        "description": "Start your meal with our delicious appetizers"
+      },
+      "mains": {
+        "name": "Main Courses",
+        "description": "Our signature main dishes"
+      },
+      "desserts": {
+        "name": "Desserts",
+        "description": "Sweet endings to your perfect meal"
+      },
+      "beverages": {
+        "name": "Beverages",
+        "description": "Refreshing drinks and premium selections"
+      }
+    },
+    "menuItems": {
+      "butterChicken": {
+        "name": "Butter Chicken",
+        "description": "Tender chicken pieces in a rich, creamy tomato-based sauce with aromatic spices"
+      },
+      "chickenBiryani": {
+        "name": "Chicken Biryani",
+        "description": "Fragrant basmati rice layered with spiced chicken, saffron, and caramelized onions"
+      },
+      "palakPaneer": {
+        "name": "Palak Paneer",
+        "description": "Fresh cottage cheese cubes in a creamy spinach gravy with aromatic spices"
+      },
+      "dalMakhani": {
+        "name": "Dal Makhani",
+        "description": "Slow-cooked black lentils and kidney beans in a rich, creamy tomato sauce"
+      },
+      "tandooriChicken": {
+        "name": "Tandoori Chicken",
+        "description": "Clay oven-roasted chicken marinated in yogurt and traditional spices"
+      },
+      "samosa": {
+        "name": "Vegetable Samosa",
+        "description": "Crispy pastry triangles filled with spiced potatoes and green peas"
+      },
+      "chickenTikka": {
+        "name": "Chicken Tikka",
+        "description": "Succulent chicken pieces marinated in spices and grilled to perfection"
+      },
+      "paneerTikka": {
+        "name": "Paneer Tikka",
+        "description": "Grilled cottage cheese cubes with bell peppers and onions in tikka marinade"
+      },
+      "gulabJamun": {
+        "name": "Gulab Jamun",
+        "description": "Soft milk dumplings soaked in aromatic sugar syrup with cardamom"
+      },
+      "rasmalai": {
+        "name": "Rasmalai",
+        "description": "Delicate cottage cheese patties in sweetened, cardamom-flavored milk"
+      },
+      "mangoLassi": {
+        "name": "Mango Lassi",
+        "description": "Refreshing yogurt drink blended with sweet mango and aromatic spices"
+      },
+      "chaiTea": {
+        "name": "Masala Chai",
+        "description": "Traditional spiced tea with cardamom, ginger, and warm spices"
+      }
+    }
+  },
+  "no": {
+    "categories": {
+      "all": {
+        "name": "Alle",
+        "description": "Se alle menyelementer"
+      },
+      "appetizers": {
+        "name": "Forretter",
+        "description": "Start måltidet med våre deilige forretter"
+      },
+      "mains": {
+        "name": "Hovedretter",
+        "description": "Våre signatur hovedretter"
+      },
+      "desserts": {
+        "name": "Desserter",
+        "description": "Søte avslutninger på ditt perfekte måltid"
+      },
+      "beverages": {
+        "name": "Drikker",
+        "description": "Forfriskende drikker og premium utvalg"
+      }
+    },
+    "menuItems": {
+      "butterChicken": {
+        "name": "Butter Chicken",
+        "description": "Møre kyllingstykker i en rik, kremete tomatbasert saus med aromatiske krydder"
+      },
+      "chickenBiryani": {
+        "name": "Kylling Biryani",
+        "description": "Duftende basmatiris lagdelt med krydret kylling, safran og karamelliserte løk"
+      },
+      "palakPaneer": {
+        "name": "Palak Paneer",
+        "description": "Ferske cottage cheese-terninger i en kremete spinatsaus med aromatiske krydder"
+      },
+      "dalMakhani": {
+        "name": "Dal Makhani",
+        "description": "Sakte kokte svarte linser og kidneybønner i en rik, kremete tomatsaus"
+      },
+      "tandooriChicken": {
+        "name": "Tandoori Kylling",
+        "description": "Leirovn-stekt kylling marinert i yoghurt og tradisjonelle krydder"
+      },
+      "samosa": {
+        "name": "Grønnsak Samosa",
+        "description": "Sprø pasteideigstrekanter fylt med krydrede poteter og grønne erter"
+      },
+      "chickenTikka": {
+        "name": "Kylling Tikka",
+        "description": "Saftige kyllingstykker marinert i krydder og grillet til perfeksjon"
+      },
+      "paneerTikka": {
+        "name": "Paneer Tikka",
+        "description": "Grillet cottage cheese-terninger med paprika og løk i tikka-marinade"
+      },
+      "gulabJamun": {
+        "name": "Gulab Jamun",
+        "description": "Myke melkeboller dynket i aromatisk sukkersirup med kardemomme"
+      },
+      "rasmalai": {
+        "name": "Rasmalai",
+        "description": "Delikate cottage cheese-pletter i søtet, kardemomme-smaksatt melk"
+      },
+      "mangoLassi": {
+        "name": "Mango Lassi",
+        "description": "Forfriskende yoghurtdrikk blandet med søt mango og aromatiske krydder"
+      },
+      "chaiTea": {
+        "name": "Masala Chai",
+        "description": "Tradisjonell krydret te med kardemomme, ingefær og varme krydder"
+      }
+    }
+  }
+}

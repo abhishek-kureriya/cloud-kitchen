@@ -1,0 +1,174 @@
+{
+  "restaurant": {
+    "name": "Indian Tadka",
+    "phone": "+1234567890",
+    "email": "info@indiantadka.com",
+    "cloudKitchen": true,
+    "deliveryOnly": true,
+    "hours": {
+      "monday": "11:00 AM - 10:00 PM",
+      "tuesday": "11:00 AM - 10:00 PM",
+      "wednesday": "11:00 AM - 10:00 PM",
+      "thursday": "11:00 AM - 10:00 PM",
+      "friday": "11:00 AM - 11:00 PM",
+      "saturday": "11:00 AM - 11:00 PM",
+      "sunday": "12:00 PM - 9:00 PM"
+    },
+    "social": {
+      "facebook": "https://facebook.com/deliciousbites",
+      "instagram": "https://instagram.com/deliciousbites",
+      "twitter": "https://twitter.com/deliciousbites",
+      "yelp": "https://yelp.com/deliciousbites"
+    }
+  },
+  "categories": [
+    {
+      "id": "all",
+      "sortOrder": 0
+    },
+    {
+      "id": "appetizers",
+      "sortOrder": 1
+    },
+    {
+      "id": "mains",
+      "sortOrder": 2
+    },
+    {
+      "id": "desserts",
+      "sortOrder": 3
+    },
+    {
+      "id": "beverages",
+      "sortOrder": 4
+    }
+  ],
+  "menuItems": [
+    {
+      "id": 1,
+      "nameKey": "butterChicken",
+      "price": "299kr",
+      "category": "mains",
+      "image": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?w=400&h=300&fit=crop&auto=format",
+      "dietary": ["gluten-free"],
+      "popular": true,
+      "emoji": "🍛",
+      "keyIngredients": ["chicken", "tomato", "cream", "garam masala", "fenugreek"]
+    },
+    {
+      "id": 2,
+      "nameKey": "chickenBiryani",
+      "price": "279kr",
+      "category": "mains",
+      "image": "https://images.unsplash.com/photo-1563379091339-03246963d8d9?w=400&h=300&fit=crop&auto=format",
+      "dietary": ["gluten-free"],
+      "popular": true,
+      "emoji": "🍚",
+      "keyIngredients": ["basmati rice", "chicken", "saffron", "onions", "mint"]
+    },
+    {
+      "id": 3,
+      "nameKey": "palakPaneer",
+      "price": "249kr",
+      "category": "mains",
+      "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=300&fit=crop&auto=format",
+      "dietary": ["vegetarian", "gluten-free"],
+      "popular": true,
+      "emoji": "🥬",
+      "keyIngredients": ["paneer", "spinach", "onions", "tomatoes", "cream"]
+    },
+    {
+      "id": 4,
+      "nameKey": "dalMakhani",
+      "price": "229kr",
+      "category": "mains",
+      "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=300&fit=crop&auto=format",
+      "dietary": ["vegetarian", "gluten-free"],
+      "emoji": "🍲",
+      "keyIngredients": ["black lentils", "kidney beans", "cream", "butter", "tomatoes"]
+    },
+    {
+      "id": 5,
+      "nameKey": "tandooriChicken",
+      "price": "319kr",
+      "category": "mains",
+      "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&h=300&fit=crop&auto=format",
+      "dietary": ["gluten-free"],
+      "emoji": "🔥",
+      "keyIngredients": ["chicken", "yogurt", "tandoori masala", "ginger", "garlic"]
+    },
+    {
+      "id": 6,
+      "nameKey": "samosa",
+      "price": "89kr",
+      "category": "appetizers",
+      "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=300&fit=crop&auto=format",
+      "dietary": ["vegetarian"],
+      "popular": true,
+      "emoji": "🥟",
+      "keyIngredients": ["potatoes", "peas", "spices", "pastry", "coriander"]
+    },
+    {
+      "id": 7,
+      "nameKey": "chickenTikka",
+      "price": "199kr",
+      "category": "appetizers",
+      "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop&auto=format",
+      "dietary": ["gluten-free"],
+      "emoji": "🍢",
+      "keyIngredients": ["chicken", "yogurt", "tikka masala", "bell peppers", "onions"]
+    },
+    {
+      "id": 8,
+      "nameKey": "paneerTikka",
+      "price": "179kr",
+      "category": "appetizers",
+      "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&h=300&fit=crop&auto=format",
+      "dietary": ["vegetarian", "gluten-free"],
+      "emoji": "🧀",
+      "keyIngredients": ["paneer", "bell peppers", "onions", "tikka masala", "mint"]
+    },
+    {
+      "id": 9,
+      "nameKey": "gulabJamun",
+      "price": "89kr",
+      "category": "desserts",
+      "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&h=300&fit=crop&auto=format",
+      "dietary": ["vegetarian"],
+      "popular": true,
+      "emoji": "🍯",
+      "keyIngredients": ["milk solids", "sugar syrup", "cardamom", "rose water"]
+    },
+    {
+      "id": 10,
+      "nameKey": "rasmalai",
+      "price": "99kr",
+      "category": "desserts",
+      "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop&auto=format",
+      "dietary": ["vegetarian"],
+      "emoji": "🥛",
+      "keyIngredients": ["cottage cheese", "milk", "sugar", "cardamom", "pistachios"]
+    },
+    {
+      "id": 11,
+      "nameKey": "mangoLassi",
+      "price": "79kr",
+      "category": "beverages",
+      "image": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=400&h=300&fit=crop&auto=format",
+      "dietary": ["vegetarian", "gluten-free"],
+      "popular": true,
+      "emoji": "🥭",
+      "keyIngredients": ["mango", "yogurt", "milk", "sugar", "cardamom"]
+    },
+    {
+      "id": 12,
+      "nameKey": "chaiTea",
+      "price": "49kr",
+      "category": "beverages",
+      "image": "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=400&h=300&fit=crop&auto=format",
+      "dietary": ["vegetarian", "gluten-free"],
+      "emoji": "🍵",
+      "keyIngredients": ["black tea", "milk", "cardamom", "ginger", "cinnamon"]
+    }
+  ]
+}

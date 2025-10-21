@@ -8,24 +8,30 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import FloatingCallButton from './components/FloatingCallButton'
 import { LanguageProvider } from './contexts/LanguageContext'
-import menuData from './data/menu.json'
+import useMenu from './hooks/useMenu'
 
-function App() {
-  const { restaurant, categories, menuItems } = menuData
+function AppContent() {
+  const { restaurant, categories, menuItems } = useMenu()
 
   return (
+    <div className="min-h-screen bg-white">
+      <Header restaurant={restaurant} />
+      <main>
+        <Hero restaurant={restaurant} />
+        <Menu categories={categories} menuItems={menuItems} />
+        <About restaurant={restaurant} />
+        <Contact restaurant={restaurant} />
+      </main>
+      <Footer restaurant={restaurant} />
+      <FloatingCallButton phone={restaurant.phone} />
+    </div>
+  )
+}
+
+function App() {
+  return (
     <LanguageProvider>
-      <div className="min-h-screen bg-white">
-        <Header restaurant={restaurant} />
-        <main>
-          <Hero restaurant={restaurant} />
-          <Menu categories={categories} menuItems={menuItems} />
-          <About restaurant={restaurant} />
-          <Contact restaurant={restaurant} />
-        </main>
-        <Footer restaurant={restaurant} />
-        <FloatingCallButton phone={restaurant.phone} />
-      </div>
+      <AppContent />
     </LanguageProvider>
   )
 }
