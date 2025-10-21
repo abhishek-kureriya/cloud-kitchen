@@ -1,10 +1,49 @@
-import React, { useState, useMemo } from 'react'
-import { Star, Leaf, Heart } from 'lucide-react'
+import React, { useState, useMemo, useRef } from 'react'
+import { Star, Leaf, Heart, Utensils, Coffee, Cookie, Wine } from 'lucide-react'
 import { useLanguage } from '../contexts/LanguageContext'
 
 const Menu = ({ categories, menuItems }) => {
   const [activeCategory, setActiveCategory] = useState('all')
   const { t } = useLanguage()
+  const mobileScrollRef = useRef(null)
+
+  // Category icons mapping
+  const categoryIcons = {
+    all: Utensils,
+    appetizers: Leaf,
+    mains: Heart,
+    desserts: Cookie,
+    beverages: Coffee
+  }
+
+  // Count items per category
+  const getCategoryCount = (categoryId) => {
+    if (categoryId === 'all') return menuItems.length
+    return menuItems.filter(item => item.category === categoryId).length
+  }
+
+  // Auto-scroll to selected category on mobile
+  const handleCategorySelect = (categoryId, buttonElement) => {
+    setActiveCategory(categoryId)
+    
+    // Auto-scroll on mobile to center the selected button
+    if (mobileScrollRef.current && buttonElement && window.innerWidth < 768) {
+      const container = mobileScrollRef.current
+      const button = buttonElement
+      
+      const containerWidth = container.offsetWidth
+      const buttonLeft = button.offsetLeft
+      const buttonWidth = button.offsetWidth
+      
+      // Calculate scroll position to center the button
+      const scrollPosition = buttonLeft - (containerWidth / 2) + (buttonWidth / 2)
+      
+      container.scrollTo({
+        left: scrollPosition,
+        behavior: 'smooth'
+      })
+    }
+  }
 
   const filteredItems = useMemo(() => {
     if (activeCategory === 'all') {
@@ -26,21 +65,72 @@ const Menu = ({ categories, menuItems }) => {
           </p>
         </div>
 
-        {/* Category Filter */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {categories.map((category) => (
-            <button
-              key={category.id}
-              onClick={() => setActiveCategory(category.id)}
-              className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
-                activeCategory === category.id
-                  ? 'bg-burgundy-600 text-white shadow-lg transform scale-105'
-                  : 'bg-white text-gray-700 hover:bg-burgundy-50 hover:text-burgundy-600 border border-gray-200'
-              }`}
+        {/* Enhanced Category Filter */}
+        <div className="mb-12">
+          {/* Desktop: Centered layout */}
+          <div className="hidden md:flex flex-wrap justify-center gap-4">
+            {categories.map((category) => {
+              const IconComponent = categoryIcons[category.id] || Utensils
+              const count = getCategoryCount(category.id)
+              
+              return (
+                <button
+                  key={category.id}
+                  onClick={() => setActiveCategory(category.id)}
+                  className={`flex items-center gap-3 px-6 py-3 rounded-full font-medium transition-all duration-300 ${
+                    activeCategory === category.id
+                      ? 'bg-burgundy-600 text-white shadow-lg transform scale-105'
+                      : 'bg-white text-gray-700 hover:bg-burgundy-50 hover:text-burgundy-600 border border-gray-200'
+                  }`}
+                >
+                  <IconComponent className="w-5 h-5" />
+                  <span>{t(`menu.categories.${category.id}`)}</span>
+                  <span className={`text-xs px-2 py-1 rounded-full ${
+                    activeCategory === category.id
+                      ? 'bg-burgundy-500'
+                      : 'bg-gray-200 text-gray-600'
+                  }`}>
+                    {count}
+                  </span>
+                </button>
+              )
+            })}
+          </div>
+
+          {/* Mobile: Horizontal scroll with auto-scroll */}
+          <div className="md:hidden">
+            <div 
+              ref={mobileScrollRef}
+              className="flex gap-3 overflow-x-auto pb-4 px-4 -mx-4 scrollbar-hide scroll-smooth"
             >
-              {t(`menu.categories.${category.id}`)}
-            </button>
-          ))}
+              {categories.map((category) => {
+                const IconComponent = categoryIcons[category.id] || Utensils
+                const count = getCategoryCount(category.id)
+                
+                return (
+                  <button
+                    key={category.id}
+                    onClick={(e) => handleCategorySelect(category.id, e.currentTarget)}
+                    className={`flex items-center gap-2 px-4 py-3 rounded-full font-medium whitespace-nowrap transition-all duration-300 ${
+                      activeCategory === category.id
+                        ? 'bg-burgundy-600 text-white shadow-lg'
+                        : 'bg-white text-gray-700 border border-gray-200'
+                    }`}
+                  >
+                    <IconComponent className="w-4 h-4" />
+                    <span className="text-sm">{t(`menu.categories.${category.id}`)}</span>
+                    <span className={`text-xs px-2 py-0.5 rounded-full ${
+                      activeCategory === category.id
+                        ? 'bg-burgundy-500'
+                        : 'bg-gray-200 text-gray-600'
+                    }`}>
+                      {count}
+                    </span>
+                  </button>
+                )
+              })}
+            </div>
+          </div>
         </div>
 
         {/* Menu Items Grid */}
